@@ -32,7 +32,8 @@ def plot_scatter_and_regression_line():
 
 
 def user_predict_value():
-    predict_value = model.predict([[9]])
+    userInput = int(input("Enter Hours for get marks:"))
+    predict_value = model.predict([[userInput]])
     print(predict_value[0])
 
 
